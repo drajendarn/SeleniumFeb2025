@@ -27,7 +27,7 @@ public class CheckboxesInteraction {
 
 		// Choose your favorite language(s)
 		driver.findElement(By.xpath("//h5[text()='Choose your favorite language(s)']/following::div[5]")).click();
-		driver.findElement(By.xpath("//div[@id='j_idt87:ajaxTriState']/div[2]")).click();
+		driver.findElement(By.xpath("//div[contains(@id,'ajaxTriState')]/div[2]")).click();
 
 		WebElement element2 = driver.findElement(By.xpath("//span[text()='State has been changed.']"));
 		if (element2.getText().equals("State has been changed.")) {
