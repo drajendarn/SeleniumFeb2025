@@ -76,8 +76,7 @@ public class AssAmazonActions {
 		action.moveToElement(addCart).click().perform();
 
 		// Get cart subtotal
-		String windowHandle = driver.getWindowHandle();
-		driver.switchTo().window(windowHandle);
+		
 		Thread.sleep(1000);
 		String subTotal = driver.findElement(By.xpath(
 				"//div[@class='a-fixed-left-grid-col a-col-right']//descendant::span[@id='attach-accessory-cart-subtotal']"))
